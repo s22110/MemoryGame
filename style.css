@@ -1,0 +1,56 @@
+body {
+    font-family:sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: rgb(151, 151, 151);
+}
+
+.board {
+    margin:30px auto;
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 5px;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.game-tile {
+    cursor: pointer;
+    background: black;
+    background-image: url("images/backtile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.game-tile:hover {
+    background-color:brown;
+}
+
+button {
+    display: block;
+    max-width: 20em;
+    text-align: center;
+    padding: 1.3em 3em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    margin: 2em auto;
+    background: black;
+    border-radius: 3em;
+    border:0;
+    cursor: pointer;
+}
+button:hover{
+    background-color: brown;
+}
